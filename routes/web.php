@@ -1,5 +1,9 @@
 <?php
 
+use App\Livewire\About;
+use App\Livewire\Galeri;
+use App\Livewire\Home;
+use App\Livewire\Kegiatan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Home::class);
+Route::get('/about', About::class);
+Route::get('/kegiatan', Kegiatan::class);
+Route::get('/galeri', Galeri::class);
+
