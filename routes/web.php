@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\About;
+use App\Http\Controllers\Register;
 use App\Livewire\Galeri;
 use App\Livewire\Home;
 use App\Livewire\Kegiatan;
@@ -21,4 +22,5 @@ Route::get('/', Home::class);
 Route::get('/about', About::class);
 Route::get('/kegiatan', Kegiatan::class);
 Route::get('/galeri', Galeri::class);
+Route::get('/register', [Register::class, 'store']);
 
