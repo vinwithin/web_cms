@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Login;
 use App\Livewire\About;
 use App\Http\Controllers\Register;
 use App\Livewire\Galeri;
@@ -23,4 +24,5 @@ Route::get('/about', About::class);
 Route::get('/kegiatan', Kegiatan::class);
 Route::get('/galeri', Galeri::class);
 Route::get('/register', [Register::class, 'store']);
+Route::get('/login', [Login::class, 'Authenticate']);
 
