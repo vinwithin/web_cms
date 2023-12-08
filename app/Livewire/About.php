@@ -30,6 +30,7 @@ class About extends Component
        $this->photo->storeAs('public', $nama_file);
        Post::create([
         'title' => $this->title,
+        'slug' => join("-",$this->title),
         'description' => $this->description,
         'image' => $nama_file,
        ]);

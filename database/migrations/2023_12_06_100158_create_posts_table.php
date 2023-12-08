@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string("title");
-            $table->string("description");
-            $table->string("image");
+            $table->string("slug");
+            $table->text("description");
+            $table->string("photos");
+            $table->string("status")->default("Belum Disetujui");
             $table->timestamps();
         });
     }
