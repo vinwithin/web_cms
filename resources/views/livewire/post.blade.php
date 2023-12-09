@@ -1,5 +1,12 @@
-<div>
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
     <table class="table">
         <thead>
           <tr>
@@ -9,15 +16,14 @@
           </tr>
         </thead>
         <tbody>
-        @foreach ($data as $item)  
+        {{-- @foreach ($posts as $item)  
           <tr>
-            <th scope="row"><a href="galery/{{ $item->slug }}">{{ $item->title }}</a></th>
+            <th scope="row"></th>
             <td colspan="2">{{ $item->description }}</td>
             <td><img src="{{ asset('storage/'.$item->photos) }}" alt="" style="width: 150px"></td>
           </tr>
-          @endforeach
+          @endforeach --}}
         </tbody>
       </table>
-    
-   
-</div>
+</body>
+</html>

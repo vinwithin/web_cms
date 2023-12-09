@@ -10,7 +10,7 @@ class Galeri extends Component
     
     public function render()
     {
-        $data = Post::all();
+        $data = Post::where('status', 'Belum Disetujui')->get();
         return view('livewire.galeri', ['data' => $data]);
     }
 }
