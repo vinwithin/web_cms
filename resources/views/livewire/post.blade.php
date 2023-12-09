@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +17,13 @@
           </tr>
         </thead>
         <tbody>
-        {{-- @foreach ($posts as $item)  
+        
           <tr>
-            <th scope="row"></th>
-            <td colspan="2">{{ $item->description }}</td>
-            <td><img src="{{ asset('storage/'.$item->photos) }}" alt="" style="width: 150px"></td>
+            <th scope="row">{{ $posts->title }}</th>
+            <td colspan="2">{{ $posts->description }}</td>
+            <td><img src="{{ asset('storage/'.$posts->photos) }}" alt="" style="width: 150px"></td>
           </tr>
-          @endforeach --}}
+         
         </tbody>
       </table>
 </body>
